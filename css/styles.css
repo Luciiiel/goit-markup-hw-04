@@ -292,11 +292,12 @@ a {
 /* footer section */
 .footer {
   background-color: var(--navyblue-color);
-  display: block;
+  display: inline-flex;
   /* column-gap: 120px; */
 }
 
 .footer-logo {
+  display: inline-flex;
   color: var(--cloud-color);
   text-decoration: none;
   font-family: "raleway", sans-serif;
