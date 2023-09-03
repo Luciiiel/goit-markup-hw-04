@@ -51,6 +51,10 @@ a {
 /* section containers */
 .header {
   border-bottom: 1px solid var(--cornflower-color);
+  background: var(--white-color);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   width: 1158px;
@@ -128,6 +132,8 @@ a {
 /* hero section */
 .hero {
   background-color: var(--navyblue-color);
+  background-image: url(../images/hero-img.jpg),
+    lightgray 0px -167.766px / 100% 139.922% no-repeat;
 }
 
 .hero-container-content {
@@ -174,6 +180,17 @@ a {
   display: flex;
   column-gap: 24px;
   justify-content: center;
+}
+
+.about-list-item {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.about-item-icon {
+  padding: 24px 100px;
+  background-color: var(--cloud-color);
+  border-radius: 4px;
 }
 
 .about-heading {
@@ -259,9 +276,24 @@ a {
   letter-spacing: 0.32px;
 }
 
+/* customer section */
+.customer {
+  display: flex;
+}
+
+.customer-heading {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
 /* footer section */
 .footer {
   background-color: var(--navyblue-color);
+  display: flex;
+  column-gap: 120px;
 }
 
 .footer-logo {
@@ -280,6 +312,11 @@ a {
 .footer-description {
   color: var(--cloud-color);
   margin-top: 17.5px;
+}
+
+.footer-socmed {
+  color: var(--white-color);
+  font-weight: 500;
 }
 
 /* portfolio.html */
