@@ -292,8 +292,8 @@ a {
 /* footer section */
 .footer {
   background-color: var(--navyblue-color);
-  display: flex;
-  column-gap: 120px;
+  display: block;
+  /* column-gap: 120px; */
 }
 
 .footer-logo {
