@@ -52,11 +52,14 @@ a {
 /* section containers */
 .header {
   border-bottom: 1px solid var(--cornflower-color);
-  background: var(--white-color);
+}
+
+.header:hover {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
   width: 1158px;
   padding: 24px 0;
@@ -128,9 +131,12 @@ a {
 
 /* hero section */
 .hero {
-  background-color: var(--navyblue-color);
-  background-image: url(../images/hero-img.jpg),
-    lightgray 0px -167.766px / 100% 139.922% no-repeat;
+  background: var(--GREY, rgba(46, 47, 66, 0.7));
+  background-image: url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+  background-size: cover;
 }
 
 .hero-container-content {
@@ -461,6 +467,13 @@ a {
   width: 360px;
   flex-direction: column;
   background-color: var(--white-color);
+}
+
+.portfolio-list-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item-content {
