@@ -380,6 +380,31 @@ a {
   row-gap: 16px;
 }
 
+.footer-socmed-list {
+  display: inline-flex;
+  flex-direction: row;
+  column-gap: 16px;
+  list-style: none;
+}
+
+.footer-socmed-item {
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris-color);
+  border-radius: 20px;
+}
+
+.footer-socmed-item:hover {
+  background-color: var(--ocean-color);
+}
+
+.footer-socmed-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px 8px;
+  fill: var(--cloud-color);
+}
+
 /* portfolio.html */
 /* containers */
 .filter-container {
