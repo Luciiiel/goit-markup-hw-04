@@ -44,6 +44,7 @@ a {
   --cornflower-color: #e7e9fc;
   --navyblue-color: #2e2f42;
   --slate-color: #434455;
+  --lightslate-color: #8e8f99;
   --iris-color: #4d5ae5;
   --ocean-color: #404bbf;
 }
@@ -77,10 +78,6 @@ a {
 
 .about-container {
   padding-bottom: 0px;
-}
-
-.footer-container {
-  padding: 100px 0;
 }
 
 /* WEBSTUDIO logo link */
@@ -188,6 +185,8 @@ a {
   row-gap: 8px;
 }
 .about-item-icon {
+  width: 264px;
+  height: 112px;
   padding: 24px 100px;
   background-color: var(--cloud-color);
   border-radius: 4px;
@@ -257,7 +256,10 @@ a {
 }
 
 .team-card-content {
-  margin: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 32px 0px;
 }
 
 .team-item-heading {
@@ -266,7 +268,6 @@ a {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
-  margin-bottom: 8px;
 }
 
 .team-item-description {
@@ -276,11 +277,34 @@ a {
   letter-spacing: 0.32px;
 }
 
-/* customer section */
-.customer {
+.team-socmed {
+  list-style: none;
+  text-decoration: none;
   display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  justify-content: center;
 }
 
+.team-socmed-item {
+  background-color: var(--iris-color);
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.team-socmed-item:hover {
+  background-color: var(--ocean-color);
+}
+
+.team-socmed-icon {
+  fill: var(--cloud-color);
+  width: 40px;
+  height: 40px;
+  padding: 12px 12px;
+}
+
+/* customer section */
 .customer-heading {
   text-align: center;
   font-size: 36px;
@@ -288,16 +312,50 @@ a {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.customer-list {
+  display: inline-flex;
+  list-style: none;
+  text-decoration: none;
+  column-gap: 24px;
+}
+
+.customer-item-link {
+  text-decoration: none;
+}
+
+.customer-item-icon:hover {
+  fill: var(--ocean-color);
+  border: 1px solid var(--ocean-color);
+}
+
+.customer-item-icon {
+  fill: var(--lightslate-color);
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  border: 1px solid var(--lightslate-color);
+  border-radius: 4px;
 }
 /* footer section */
 .footer {
   background-color: var(--navyblue-color);
-  display: inline-flex;
-  /* column-gap: 120px; */
 }
 
-.footer-logo {
-  display: inline-flex;
+.footer-container {
+  display: flex;
+  column-gap: 120px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 17.5px;
+}
+
+.footer-info-logo {
   color: var(--cloud-color);
   text-decoration: none;
   font-family: "raleway", sans-serif;
@@ -310,14 +368,16 @@ a {
   color: var(--iris-color);
 }
 
-.footer-description {
+.footer-info-description {
   color: var(--cloud-color);
-  margin-top: 17.5px;
 }
 
 .footer-socmed {
+  display: flex;
+  flex-direction: column;
   color: var(--white-color);
   font-weight: 500;
+  row-gap: 16px;
 }
 
 /* portfolio.html */
