@@ -47,6 +47,7 @@ a {
   --lightslate-color: #8e8f99;
   --iris-color: #4d5ae5;
   --ocean-color: #404bbf;
+  --green-color: #31d0aa;
 }
 
 /* section containers */
@@ -161,6 +162,7 @@ a {
 .hero-button {
   color: var(--white-color);
   background-color: var(--iris-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   font-family: "roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 0.64px;
@@ -174,7 +176,6 @@ a {
 
 .hero-button:hover {
   background-color: var(--ocean-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* about section */
@@ -324,27 +325,36 @@ a {
 .customer-list {
   display: inline-flex;
   list-style: none;
-  text-decoration: none;
   column-gap: 24px;
 }
 
-.customer-item-link {
-  text-decoration: none;
+.customer-list-item {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate-color);
 }
 
-.customer-item-icon:hover {
-  fill: var(--ocean-color);
-  border: 1px solid var(--ocean-color);
+.customer-list-item:hover {
+  border-color: var(--ocean-color);
+}
+
+.customer-item-link {
+  color: var(--lightslate-color);
+  display: block;
+  width: 168px;
+  height: 88px;
+}
+
+.customer-list-item:hover .customer-item-link {
+  color: var(--ocean-color);
 }
 
 .customer-item-icon {
-  fill: var(--lightslate-color);
   width: 168px;
   height: 88px;
   padding: 16px 32px;
-  border: 1px solid var(--lightslate-color);
-  border-radius: 4px;
+  fill: currentColor;
 }
+
 /* footer section */
 .footer {
   background-color: var(--navyblue-color);
@@ -401,7 +411,7 @@ a {
 }
 
 .footer-socmed-item:hover {
-  background-color: var(--ocean-color);
+  background-color: var(--green-color);
 }
 
 .footer-socmed-icon {
