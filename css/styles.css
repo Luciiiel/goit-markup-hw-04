@@ -112,7 +112,27 @@ a {
   column-gap: 40px;
 }
 
-.nav-list-item:hover {
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--ocean-color);
+  border-radius: 2px;
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -20px;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+.nav-link:hover {
   color: var(--ocean-color);
 }
 
@@ -126,7 +146,7 @@ a {
   column-gap: 40px;
 }
 
-.address-list-item:hover {
+.address-link:hover {
   color: var(--ocean-color);
 }
 
