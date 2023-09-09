@@ -60,7 +60,7 @@ a {
 
 .header-container {
   width: 1158px;
-  padding: 24px 0;
+  padding: 24px 0 21.5px 0;
   margin: auto;
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@ a {
   height: 4px;
   width: 0;
   left: 0;
-  bottom: -20px;
+  bottom: -25.5px;
 }
 
 .nav-link:hover::after {
